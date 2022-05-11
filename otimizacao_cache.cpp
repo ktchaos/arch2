@@ -7,10 +7,9 @@
 
 using namespace std;
 
-static long N = 1000;
+static long N = 10; // Mudar valor de N para diferentes resultados e cenários
 
-int selectionSort(){
-
+int selectionSort() {
 	double a[N], b[N];	
     double c[N][N];
 	int i, j;
@@ -21,7 +20,6 @@ int selectionSort(){
         b[i] = 10 * i;
     }
 
-    /* Selection sort */
     for (int j = 0; j < N - 1; j++) {
         int min_idx = j;
         for (int i = j + 1; i < j; i++) {
@@ -50,7 +48,7 @@ int selectionSort(){
 	return 0;	
 }
 
-int invertedSelectionSort(){
+int invertedSelectionSort() {
 
 	double a[N], b[N];	
     double c[N][N];
@@ -62,7 +60,6 @@ int invertedSelectionSort(){
         b[i] = 10 * i;
     }
 
-    /* Selection sort */
     for (int j = N - 1; j >= 1; j--) {
         int min_idx = j;
         for (int i = j - 1; i >= 0; i--) {
@@ -109,7 +106,6 @@ int mergeArrays(){
         ms[i].key = i * 10;
     }
 
-	/* Selection sort */
     for (int j = N - 1; j >= 0; j--) {
         int min_idx = j;
         for (int i = j - 1; i >= 0; i--) {
